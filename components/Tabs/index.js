@@ -7,3 +7,17 @@
 //
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
+
+function makeTab (data){
+
+
+}
+
+function callApi () {
+    const data = []
+    axios
+    .get('https://lambda-times-backend.herokuapp.com/topics')
+    .then(response => {
+        data.push(response.data)
+    })
+    .catch(arr => console.error(err))}

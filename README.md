@@ -29,15 +29,15 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
-
+Document Object model 
 2. What is an event?
-
+An event is something that happens during the user interaction with the webpage.
 3. What is an event listener?
-
+What prompts an event from taking place. 
 4. Why would we convert a NodeList into an Array?
-
+So we have access to all of the array methods Ex: splice/map/reduce etc. Node lists do not have access to these methods
 5. What is a component?
-
+A piece of code that allows us to be DRY 
 ### Git Set up
 
 * [ ] Fork the project into your GitHub user account

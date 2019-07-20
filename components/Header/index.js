@@ -9,4 +9,46 @@
 //  </div >
 // And add it to the DOM in the .headerContainer component
 
-function Header() {}
+const data = [
+    date,
+    lambda,
+    temp
+]
+
+const headerContainer = document.querySelector('.headerContainer')
+
+data.forEach(array => {
+    
+    headerContainer.appendChild(Header(array.time, array.lambda, array.degrees));
+})
+
+
+
+
+function Header(time, lambda, degrees) {
+
+
+
+//Add Elements
+const header = document.createElement('div')
+const date = document.createElement('span')
+const title = document.createElement('h1')
+const temp = document.createElement('span')
+ 
+//Organize Elements
+header.appendChild(date)
+header.appendChild(title)
+header.appendChild(temp)
+
+//Add Classes
+header.classList.add('header')
+date.classList.add('date')
+temp.classList.add('temp')
+
+//Add Text Content
+ date.textContent = time
+ title.textContent = lambda
+ temp.textContent = degrees
+ 
+return header;
+}
